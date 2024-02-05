@@ -1,13 +1,13 @@
 import { ProductCard } from "../common/ProductCard"
 
-const ItemListContainer = () => {
+const ItemListContainer = ({greetings}) => {
     return  <div>
-    <h2>Estos son nuestro productos</h2>
+    <h2> {greetings} </h2>
 
-    <ProductCard />
-    <ProductCard />
-    <ProductCard />
-    
+    {/* <ProductCard tit={"Guitarra Gracia"} desc={"Modelo N23"} precio={"$150.000,00"} />
+    <ProductCard tit={"Guitarra Fonseca"} desc={"Modelo F2"} precio={"$180.000,00"}/>
+    <ProductCard tit={"Guitarra Alpujarra"} desc={"Modelo 128"} precio={"$230.000,00"}/> */}
+
     </div>
 }
 

@@ -1,8 +1,13 @@
-import { FaShoppingCart } from "react-icons/fa"
+import { TiShoppingCart } from "react-icons/ti";
+import Counter from "./Counter";
 
 const CartWidget = () => {
   return (
-    <div>CartWidget</div>
+    
+    <div>
+      <TiShoppingCart size="50px" />
+      <Counter/>
+    </div>
   )
 }
 
