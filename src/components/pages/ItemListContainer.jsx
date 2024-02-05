@@ -1,14 +1,16 @@
-import { ProductCard } from "../common/ProductCard"
+import { ProductCard } from "../common/ProductCard";
+import "./itemListContainer.css";
 
-const ItemListContainer = ({greetings}) => {
-    return  <div>
-    <h2> {greetings} </h2>
+const ItemListContainer = ({ greetings }) => {
+  return (
+    <div>
+      <h2 className="bienvenida"> {greetings} </h2>
 
-    {/* <ProductCard tit={"Guitarra Gracia"} desc={"Modelo N23"} precio={"$150.000,00"} />
+      {/* <ProductCard tit={"Guitarra Gracia"} desc={"Modelo N23"} precio={"$150.000,00"} />
     <ProductCard tit={"Guitarra Fonseca"} desc={"Modelo F2"} precio={"$180.000,00"}/>
     <ProductCard tit={"Guitarra Alpujarra"} desc={"Modelo 128"} precio={"$230.000,00"}/> */}
-
     </div>
-}
+  );
+};
 
-export default ItemListContainer
+export default ItemListContainer;

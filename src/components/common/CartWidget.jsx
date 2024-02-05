@@ -1,14 +1,17 @@
 import { TiShoppingCart } from "react-icons/ti";
 import Counter from "./Counter";
+import Button from "@mui/material/Button";
 
 const CartWidget = () => {
   return (
-    
     <div>
-      <TiShoppingCart size="50px" />
-      <Counter/>
+      <Button variant="contained">
+        {" "}
+        <TiShoppingCart size="20px" />
+        <Counter />{" "}
+      </Button>
     </div>
-  )
-}
+  );
+};
 
-export default CartWidget
+export default CartWidget;
