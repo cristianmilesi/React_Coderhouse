@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.logo_nav {
+  height: 75px;
+  align-items: center;
+}
 .categorias {
   list-style: none;
   display: flex;
