@@ -1,4 +1,4 @@
-import CartWidget from "../common/CartWidget";
+import CartWidget from "../../common/CartWidget/CartWidget";
 import { Grid } from "@mui/material";
 import "./Navbar.css";
 

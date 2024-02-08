@@ -1,5 +1,5 @@
 import { TiShoppingCart } from "react-icons/ti";
-import Counter from "./Counter";
+import Counter from "../Counter/Counter";
 import Button from "@mui/material/Button";
 
 const CartWidget = () => {

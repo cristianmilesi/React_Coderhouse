@@ -1,6 +1,6 @@
-import { Footer } from "./components/layout/Footer";
-import { Navbar } from "./components/layout/Navbar";
-import ItemListContainer from "./components/pages/ItemListContainer";
+import { Footer } from "./components/layout/Footer/Footer";
+import { Navbar } from "./components/layout/Navbar/Navbar";
+import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer";
 
 function App() {
   return (
