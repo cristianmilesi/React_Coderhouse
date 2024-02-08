@@ -1,10 +1,10 @@
 import { ProductCard } from "../../common/ProductCard/ProductCard";
 import "./itemListContainer.css";
 
-const ItemList = ({ greetings }) => {
+const ItemList = () => {
   return (
     <div>
-      <h2 className="bienvenida"> {greetings} </h2>
+      {/* <h2 className="bienvenida"> {greetings} </h2> */}
 
       <ProductCard
         tit={"Guitarra Gracia"}
