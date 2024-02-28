@@ -5,14 +5,15 @@ import "./itemList.css";
 export const ItemList = ({ products }) => {
   return (
     <div className="cardContainer">
-      {products.map((item) => {
+      {products.map(({ id, img, title, description, price }) => {
         return (
           <ProductCard
-            key={item.id}
-            img={item.img}
-            title={item.title}
-            description={item.description}
-            price={item.price}
+            key={id}
+            img={img}
+            title={title}
+            description={description}
+            price={price}
+            id={id}
           />
         );
       })}

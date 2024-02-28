@@ -1,5 +1,4 @@
-// import { products } from "../../../asyncMock";
-import { ItemDetail } from "./ItemDetail";
+import { ItemDetail } from "../";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getProduct } from "../../../asyncMock";
@@ -15,7 +14,7 @@ export const ItemDetailContainer = () => {
       setItem(resp);
       setIsLoading(false);
     });
-  }, []);
+  }, [id]);
 
   return (
     <>{isLoading ? <h2>Cargando productos...</h2> : <ItemDetail {...item} />}</>

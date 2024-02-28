@@ -18,13 +18,23 @@ export const Navbar = () => {
           </Link>
         </Grid>
         <Grid item xs={12} md={6}>
-          <ul className="categorias">
-            <li>Todas las categorías</li>
-            <li>Guitarras</li>
-            <li>Teclados</li>
-            <li>Batería</li>
-            <li>Bajos</li>
-          </ul>
+          <div className="categorias">
+            <Link to="/">
+              <button>Todas las categorías</button>
+            </Link>
+            <Link to="/category/Guitarras">
+              <button>Guitarras</button>
+            </Link>
+            <Link to="/category/Teclados">
+              <button>Teclados</button>
+            </Link>
+            <Link to="/category/Batería">
+              <button>Batería</button>
+            </Link>
+            <Link to="/category/Bajos">
+              <button>Bajos</button>
+            </Link>
+          </div>
         </Grid>
 
         <Grid item xs={12} md={3}>
