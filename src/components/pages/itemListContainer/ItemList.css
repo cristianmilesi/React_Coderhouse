@@ -7,6 +7,6 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 5px;
   background-color: rgba(139, 160, 139, 0.464);
 }

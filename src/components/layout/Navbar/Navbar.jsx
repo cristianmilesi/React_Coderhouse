@@ -1,6 +1,7 @@
 import CartWidget from "../../common/CartWidget/CartWidget";
 import { Grid } from "@mui/material";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
@@ -8,13 +9,13 @@ export const Navbar = () => {
       <Grid container sx={{ backgroundColor: "lightgrey" }}>
         <Grid item xs={12} md={3}>
           {" "}
-          <h3>
+          <Link to="/">
             <img
               className="logo_nav"
               src="https://res.cloudinary.com/dx4kaqyx0/image/upload/v1707146253/React_Project/MusicMart-logo.png"
               alt="MusicMart Logo"
             />
-          </h3>{" "}
+          </Link>
         </Grid>
         <Grid item xs={12} md={6}>
           <ul className="categorias">
@@ -27,8 +28,9 @@ export const Navbar = () => {
         </Grid>
 
         <Grid item xs={12} md={3}>
-          {" "}
-          <CartWidget />{" "}
+          <Link to="/Cart">
+            <CartWidget />
+          </Link>
         </Grid>
       </Grid>
     </div>

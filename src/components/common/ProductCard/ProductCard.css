@@ -6,7 +6,7 @@
   background-color: white;
   border: "1px solid gray";
   border-radius: 5px;
-  margin: 20px auto;
+  margin: 5px auto;
   display: flex;
   flex-direction: column;
   height: 70vh;
@@ -15,6 +15,6 @@
 }
 
 .imagenProducto {
-  height: 70%;
+  height: 60%;
   object-fit: contain;
 }

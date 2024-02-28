@@ -2,10 +2,10 @@ import { ProductCard } from "../../common/ProductCard/ProductCard";
 import "./itemListContainer.css";
 import "./itemList.css";
 
-const ItemList = ({ items }) => {
+export const ItemList = ({ products }) => {
   return (
     <div className="cardContainer">
-      {items.map((item) => {
+      {products.map((item) => {
         return (
           <ProductCard
             key={item.id}
@@ -19,5 +19,3 @@ const ItemList = ({ items }) => {
     </div>
   );
 };
-
-export default ItemList;
