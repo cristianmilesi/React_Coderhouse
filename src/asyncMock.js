@@ -92,7 +92,7 @@ export const getProducts = () => {
 export const getProduct = (id) => {
   return new Promise((resolve, reject) => {
     if (products.length > 0) {
-      const item = products.find((product) => product.id === id);
+      const item = products.find((product) => product.id == id);
 
       setTimeout(() => {
         if (item) {
