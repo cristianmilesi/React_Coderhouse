@@ -1,16 +1,19 @@
 import { TiShoppingCart } from "react-icons/ti";
 import Counter from "../Counter/Counter";
-import Button from "@mui/material/Button";
+import Badge from "@mui/material/Badge";
+import { BsFillCartCheckFill } from "react-icons/bs";
+import { useContext } from "react";
+import { CartContext } from "../../../context/CartContext";
+import { Link } from "react-router-dom";
 
 const CartWidget = () => {
+  const { cart } = useContext(CartContext);
   return (
-    <div>
-      <Button variant="contained">
-        {" "}
-        <TiShoppingCart size="20px" />
-        <Counter />{" "}
-      </Button>
-    </div>
+    <Link to="/cart">
+      <Badge badgeContent={cart.lenght} showZero color="primary">
+        <TiShoppingCart size="25px" />
+      </Badge>
+    </Link>
   );
 };
 
