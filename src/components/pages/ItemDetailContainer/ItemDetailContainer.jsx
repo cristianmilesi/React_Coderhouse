@@ -3,20 +3,20 @@ import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getProduct } from "../../../asyncMock";
 import { CartContext } from "../../../context/CartContext";
-
+import { db } from "../../../firebaseConfig";
+import { collection, doc, getDoc } from "firebase/firestore";
 export const ItemDetailContainer = () => {
   const { id } = useParams();
 
   const [item, setItem] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  const { addToCart } = useContext(CartContext);
+  const { addToCart, getTotalQuantityById } = useContext(CartContext);
+
+  const initial = getTotalQuantityById(+id);
 
   useEffect(() => {
-    getProduct(id).then((resp) => {
-      setItem(resp);
-      setIsLoading(false);
-    });
+    let productsCollection = collection(db, "products");
   }, [id]);
 
   const onAdd = (cantidad) => {
@@ -32,7 +32,7 @@ export const ItemDetailContainer = () => {
       {isLoading ? (
         <h2>Cargando productos...</h2>
       ) : (
-        <ItemDetail {...item} onAdd={onAdd} />
+        <ItemDetail {...item} onAdd={onAdd} initial={initial} />
       )}
     </>
   );

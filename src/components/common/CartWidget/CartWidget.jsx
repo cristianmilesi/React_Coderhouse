@@ -7,11 +7,14 @@ import { CartContext } from "../../../context/CartContext";
 import { Link } from "react-router-dom";
 
 const CartWidget = () => {
-  const { cart } = useContext(CartContext);
+  const { getTotalItems } = useContext(CartContext);
+
+  let total = getTotalItems();
+
   return (
     <Link to="/cart">
-      <Badge badgeContent={cart.lenght} showZero color="primary">
-        <TiShoppingCart size="25px" />
+      <Badge badgeContent={total} showZero color="primary">
+        <BsFillCartCheckFill size="30px" color="beige" />
       </Badge>
     </Link>
   );

@@ -16,7 +16,10 @@
   align-items: center;
 }
 .categorias {
+  margin-top: 15px;
   list-style: none;
+  text-decoration: none;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }

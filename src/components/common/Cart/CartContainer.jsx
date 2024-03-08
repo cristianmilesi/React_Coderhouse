@@ -4,8 +4,9 @@ import { useContext } from "react";
 import { CartContext } from "../../../context/CartContext";
 
 export const CartContainer = () => {
-  const { cart, clearCart, removeById } = useContext(CartContext);
-
+  const { cart, clearCart, removeById, getTotalPrice } =
+    useContext(CartContext);
+  let total = getTotalPrice();
   return (
     <div>
       {cart.map((product) => (
@@ -15,6 +16,8 @@ export const CartContainer = () => {
           <button onClick={() => removeById(product.id)}>Eliminar</button>
         </div>
       ))}
+
+      <h2>El total a pagar es ${total}</h2>
       <button onClick={clearCart}>Limpiar Carrito</button>
 
       <Link to="/checkout">

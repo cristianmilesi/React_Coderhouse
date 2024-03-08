@@ -16,7 +16,12 @@ export const ItemDetail = ({
       <img className="ImgProduct" src={img} alt="Imágen de Producto" />
       <h3> {price} </h3>
       <p> {description} </p>
-      <ItemCountContainer stock={stock} onAdd={onAdd} />
+      {initial ? (
+        <h4>Ya tienes {initial} en el carrito </h4>
+      ) : (
+        <h2>No tienes unidades</h2>
+      )}
+      <ItemCountContainer stock={stock} onAdd={onAdd} initial={initial} />
     </div>
   );
 };
