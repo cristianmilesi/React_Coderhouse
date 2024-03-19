@@ -5,6 +5,8 @@ import { getProduct } from "../../../asyncMock";
 import { CartContext } from "../../../context/CartContext";
 import { db } from "../../../firebaseConfig";
 import { collection, doc, getDoc } from "firebase/firestore";
+import Swal from "sweetalert2";
+
 export const ItemDetailContainer = () => {
   const { id } = useParams();
 
@@ -13,10 +15,18 @@ export const ItemDetailContainer = () => {
 
   const { addToCart, getTotalQuantityById } = useContext(CartContext);
 
-  const initial = getTotalQuantityById(+id);
+  const initial = getTotalQuantityById(id);
 
   useEffect(() => {
+    setIsLoading(true);
+
     let productsCollection = collection(db, "products");
+    let refDoc = doc(productsCollection, id);
+    getDoc(refDoc)
+      .then((res) => {
+        setItem({ ...res.data(), id: res.id });
+      })
+      .finally(() => setIsLoading(false));
   }, [id]);
 
   const onAdd = (cantidad) => {
@@ -25,6 +35,13 @@ export const ItemDetailContainer = () => {
       quantity: cantidad,
     };
     addToCart(infoProducto);
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Producto agregado al carrito",
+      showConfirmButton: false,
+      timer: 1500,
+    });
   };
 
   return (

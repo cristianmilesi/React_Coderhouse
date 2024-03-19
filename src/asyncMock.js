@@ -1,24 +1,5 @@
-const products = [
+export const products = [
   {
-    id: 1,
-    title: "Guitarra Gracia M7",
-    price: 140000,
-    description: "Guitarra criolla de estudio",
-    img: "https://res.cloudinary.com/dx4kaqyx0/image/upload/v1707134951/React_Project/Gracia_M7/M7-frente_bsubfx.jpg",
-    stock: 10,
-    category: "Guitarras",
-  },
-  {
-    id: 2,
-    title: "Guitarra Gracia M10",
-    price: 210000,
-    description: "Guitarra criolla semiprofesional con EQ Fishman",
-    img: "https://res.cloudinary.com/dx4kaqyx0/image/upload/v1708079287/React_Project/M10/M10-Granada-Fishman-Entera_bxkbuu.jpg",
-    stock: 7,
-    category: "Guitarras",
-  },
-  {
-    id: 3,
     title: "Guitarra La Alpujarra 300K",
     price: 750000,
     description:
@@ -28,7 +9,6 @@ const products = [
     category: "Guitarras",
   },
   {
-    id: 4,
     title: "Guitarra La Alpujarra M90",
     price: 680000,
     description:
@@ -38,7 +18,6 @@ const products = [
     category: "Guitarras",
   },
   {
-    id: 5,
     title: "Guitarra Fonseca 41K",
     price: 750000,
     description: "Guitarra de Estudio con Corte (Cutaway) y Media Caja",
@@ -46,17 +25,8 @@ const products = [
     stock: 12,
     category: "Guitarras",
   },
+
   {
-    id: 6,
-    title: "YAMAHA P45B",
-    price: 920000,
-    description: "Piano Electrico 88 teclas pesadas",
-    img: "https://res.cloudinary.com/dx4kaqyx0/image/upload/v1708080490/React_Project/Yamaha_P45/1908141258252045_03_large_lcixhd.jpg",
-    stock: 4,
-    category: "Teclados",
-  },
-  {
-    id: 7,
     title: "CASIO AP-270",
     price: 1500000,
     description:
@@ -66,7 +36,6 @@ const products = [
     category: "Teclados",
   },
   {
-    id: 8,
     title: "CASIO CT-S300",
     price: 275000,
     description:
@@ -74,6 +43,25 @@ const products = [
     img: "https://res.cloudinary.com/dx4kaqyx0/image/upload/v1708081412/React_Project/CASIO_CTs300/1912161039478928_05_large_tgvi8p.jpg",
     stock: 3,
     category: "Teclados",
+  },
+  {
+    title: "PEARL DMP943XP",
+    price: 1352500,
+    description:
+      "Batería DMP943XP/C 229. Batería de 3 cuerpos. Decade Maple, 24/13&16. White Satin Pearl (No incluye palillos, Fierros ni tambor)",
+    img: "https://res.cloudinary.com/dx4kaqyx0/image/upload/v1710333013/React_Project/Pearl-DMP943XP/1710101059175168_04_large_xb4sqq.jpg",
+    stock: 4,
+    category: "Baterías",
+  },
+
+  {
+    title: "FENDER 019",
+    price: 550000,
+    description:
+      "Bajo Electrico, Jazz Bass American. Std 2012 Mn, C/Estuche, Sunbur",
+    img: "https://res.cloudinary.com/dx4kaqyx0/image/upload/v1710333198/React_Project/Fender_Bass/12446_medium_v38d9v.jpg",
+    stock: 5,
+    category: "Bajos",
   },
 ];
 

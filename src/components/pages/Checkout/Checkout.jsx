@@ -1,22 +1,32 @@
-export const Checkout = ({ envioDeFormulario, capturar }) => {
+export const Checkout = ({ envioDeFormulario, capturar, orderId }) => {
   return (
     <>
-      <h1>Este es el Checkout</h1>
-      <form onSubmit={envioDeFormulario}>
-        <input
-          type="text"
-          placeholder="Ingresa tu nombre"
-          onChange={capturar}
-          name="name"
-        />
-        <input
-          type="text"
-          placeholder="Ingresa tu apellido"
-          onChange={capturar}
-          name="lastName"
-        />
-        <button type="submit"> enviar </button>
-      </form>
+      {orderId ? (
+        <h2>Gracias. Tu número de compra es {orderId} </h2>
+      ) : (
+        <form onSubmit={envioDeFormulario}>
+          <input
+            type="text"
+            placeholder="Ingresa tu nombre"
+            onChange={capturar}
+            name="name"
+          />
+          <input
+            type="text"
+            placeholder="Ingresa teléfono"
+            onChange={capturar}
+            name="phone"
+          />
+
+          <input
+            type="text"
+            placeholder="Ingresa tu email"
+            onChange={capturar}
+            name="email"
+          />
+          <button type="submit"> Comprar </button>
+        </form>
+      )}
     </>
   );
 };

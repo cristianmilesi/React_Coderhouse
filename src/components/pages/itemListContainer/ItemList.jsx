@@ -1,6 +1,7 @@
 import { ProductCard } from "../../common/ProductCard/ProductCard";
 import "./itemListContainer.css";
 import "./itemList.css";
+// import { AgregarDocs } from "../../../AgregarDocs";
 
 export const ItemList = ({ products }) => {
   return (

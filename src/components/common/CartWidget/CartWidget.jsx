@@ -1,5 +1,3 @@
-import { TiShoppingCart } from "react-icons/ti";
-import Counter from "../Counter/Counter";
 import Badge from "@mui/material/Badge";
 import { BsFillCartCheckFill } from "react-icons/bs";
 import { useContext } from "react";

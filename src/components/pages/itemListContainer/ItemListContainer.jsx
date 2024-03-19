@@ -4,6 +4,8 @@ import { getProducts } from "../../../asyncMock";
 import { useParams } from "react-router-dom";
 import { db } from "../../../firebaseConfig";
 import { collection, getDocs, query, where } from "firebase/firestore";
+import BeatLoader from "react-spinners/BeatLoader";
+import { CardSkeleton } from "../../common/CardSkeleton";
 
 export const ItemListContainer = () => {
   const { category } = useParams();
@@ -11,17 +13,6 @@ export const ItemListContainer = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // setIsLoading(true)
-    // let productsCollection = collection(db, "products");
-    // getDocs(productsCollection)
-    //   .then((res) => {
-    //     let arrayLindo = res.docs.map((elemento) => {
-    //       return { ...elemento.data(), id: elemento.id };
-    //     });
-    //     setProducts(arrayLindo);
-    //   })
-    //   .finally(() => setIsLoading(false));
-
     let productsCollection = collection(db, "products");
 
     let consulta = productsCollection;
@@ -44,13 +35,20 @@ export const ItemListContainer = () => {
       .finally(() => setIsLoading(false));
   }, [category]);
 
+  if (isLoading) {
+    return (
+      <div>
+        <CardSkeleton />
+        <CardSkeleton />
+        <CardSkeleton />
+      </div>
+    );
+  }
+
   return (
     <>
-      {isLoading ? (
-        <h2>Cargando Productos...</h2>
-      ) : (
-        <ItemList products={products} />
-      )}
+      {" "}
+      <ItemList products={products} />
     </>
   );
 };

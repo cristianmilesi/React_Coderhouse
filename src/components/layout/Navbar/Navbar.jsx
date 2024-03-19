@@ -2,6 +2,7 @@ import CartWidget from "../../common/CartWidget/CartWidget";
 import { Grid } from "@mui/material";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { menuNavigation } from "../../../router/menuNavigation";
 
 export const Navbar = () => {
   return (
@@ -19,29 +20,16 @@ export const Navbar = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <div className="categorias">
-            <Link to="/">
-              <li>Todas las categorías</li>
-            </Link>
-            <Link to="/category/Guitarras">
-              <li>Guitarras</li>
-            </Link>
-            <Link to="/category/Teclados">
-              <li>Teclados</li>
-            </Link>
-            <Link to="/category/Batería">
-              <li>Batería</li>
-            </Link>
-            <Link to="/category/Bajos">
-              <li>Bajos</li>
-            </Link>
+            {menuNavigation.map(({ id, text, path }) => (
+              <Link key={id} to={path}>
+                {" "}
+                {text}{" "}
+              </Link>
+            ))}
           </div>
         </Grid>
 
-        <Grid item xs={12} md={3}>
-          <Link to="/Cart">
-            <CartWidget />
-          </Link>
-        </Grid>
+        <CartWidget />
       </Grid>
     </div>
   );
