@@ -1,8 +1,27 @@
-# React + Vite
+# E-comerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tienda en linea de instrumentos musicales
 
-Currently, two official plugins are available:
+![](https://res.cloudinary.com/dx4kaqyx0/image/upload/v1707146253/React_Project/MusicMart-logo.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Google] (www.google.com)
+
+```
+npm i react-router-dom
+```
+
+```javascript
+const nombre = tata;
+const sumar = () => {};
+```
+
+#### Para hacer funcionar
+
+##### Configurar las siguientes variables
+
+- VITE_APIKEY
+- VITE_AUTH_DOMAIN
+- VITE_PROJECT_ID
+- VITE_STORAGE_BUCKET
+- VITE_MESSAGING_SENDER_ID
+- VITE_APP_ID
