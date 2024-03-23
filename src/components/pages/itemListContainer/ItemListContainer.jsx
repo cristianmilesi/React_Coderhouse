@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 import { ItemList } from "./ItemList";
-import { getProducts } from "../../../asyncMock";
 import { useParams } from "react-router-dom";
 import { db } from "../../../firebaseConfig";
 import { collection, getDocs, query, where } from "firebase/firestore";
-import BeatLoader from "react-spinners/BeatLoader";
 import { CardSkeleton } from "../../common/CardSkeleton";
 
 export const ItemListContainer = () => {
