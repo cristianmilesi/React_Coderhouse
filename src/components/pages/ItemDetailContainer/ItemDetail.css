@@ -2,18 +2,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*font-family: "Source Sans Pro Regular"; */
 }
 
 .ItemDetail_container {
-  margin: 5px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   text-align: center;
+  gap: 10px;
+  background-color: rgba(234, 225, 231, 0.464);
 }
 
 .ImgProduct {
   margin: 5px auto;
-  width: 40vw;
+  height: 60vh;
   object-fit: contain;
+  border-radius: 5px;
+  border: thistle;
+  box-shadow: 4px 4px 15px -4px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: 4px 4px 15px -4px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 4px 4px 15px -4px rgba(0, 0, 0, 0.69);
+}
+
+.text_detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 5px;
 }

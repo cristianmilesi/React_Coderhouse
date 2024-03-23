@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Rosario";
+  src: local("Rosario"), url("./fonts/Rosario-VariableFont_wght.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Rosario", sans-serif;
+}

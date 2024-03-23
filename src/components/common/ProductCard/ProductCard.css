@@ -2,19 +2,43 @@
   box-sizing: border-box;
 }
 
-.card {
+.card_container {
+  transition: 0.2s ease-in-out;
+  margin: 5px auto;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20vw;
+  height: 300px;
+  gap: 5px;
   background-color: white;
   border: "1px solid gray";
   border-radius: 5px;
-  margin: 5px auto;
-  display: flex;
-  flex-direction: column;
-  height: 70vh;
-  width: 25vw;
   text-align: center;
+  box-shadow: 4px 4px 15px -4px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: 4px 4px 15px -4px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 4px 4px 15px -4px rgba(0, 0, 0, 0.69);
 }
 
-.imagenProducto {
-  height: 60%;
+.card_container :hover {
+  cursor: pointer;
+  color: rgb(63, 22, 101);
+}
+
+.imagen_container {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagen_producto {
+  width: 90%;
+  max-height: 100%;
   object-fit: contain;
+}
+
+.text_container {
+  font-size: 0.8rem;
+  margin: 5px;
 }

@@ -7,13 +7,13 @@ import { menuNavigation } from "../../../router/menuNavigation";
 export const Navbar = () => {
   return (
     <div className="nav">
-      <Grid container sx={{ backgroundColor: "lightgrey" }}>
+      <Grid container className="nav_container">
         <Grid item xs={12} md={3}>
           {" "}
           <Link to="/">
             <img
               className="logo_nav"
-              src="https://res.cloudinary.com/dx4kaqyx0/image/upload/v1707146253/React_Project/MusicMart-logo.png"
+              src="https://res.cloudinary.com/dx4kaqyx0/image/upload/v1711042750/React_Project/MusicMart__1_-removebg-preview_xes5h1.png"
               alt="MusicMart Logo"
             />
           </Link>
@@ -21,15 +21,14 @@ export const Navbar = () => {
         <Grid item xs={12} md={6}>
           <div className="categorias">
             {menuNavigation.map(({ id, text, path }) => (
-              <Link key={id} to={path}>
+              <Link className="enlaces" key={id} to={path}>
                 {" "}
                 {text}{" "}
               </Link>
             ))}
+            <CartWidget />
           </div>
         </Grid>
-
-        <CartWidget />
       </Grid>
     </div>
   );

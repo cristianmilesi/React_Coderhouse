@@ -3,7 +3,7 @@ import "./ItemCount.css";
 
 const ItemCount = ({ counter, addOne, subOne, onAdd }) => {
   return (
-    <div className="Contador">
+    <div className="contador_container">
       <div>
         <Button
           variant="contained"

@@ -11,15 +11,40 @@
   text-align: center;
 }
 
+.nav_container {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 0.8509485094850948) 0%,
+    rgba(252, 70, 107, 0.7723577235772358) 100%
+  );
+  opacity: 90%;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
 .logo_nav {
   height: 75px;
+  justify-content: center;
   align-items: center;
 }
 .categorias {
-  margin-top: 15px;
-  list-style: none;
-  text-decoration: none;
+  margin-top: 5px;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.enlaces {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(234, 234, 234);
+  font-weight: 600;
+  transition: 0.2s ease-in;
+}
+
+.enlaces:hover {
+  color: rgb(228, 160, 209);
 }
