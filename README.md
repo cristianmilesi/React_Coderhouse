@@ -6,15 +6,6 @@
 
 [Google] (www.google.com)
 
-```
-npm i react-router-dom
-```
-
-```javascript
-const nombre = tata;
-const sumar = () => {};
-```
-
 #### Para hacer funcionar
 
 ##### Configurar las siguientes variables
@@ -25,3 +16,11 @@ const sumar = () => {};
 - VITE_STORAGE_BUCKET
 - VITE_MESSAGING_SENDER_ID
 - VITE_APP_ID
+
+#### A tener en cuenta
+
+La página se encuentra todavía en proceso de prueba.
+
+Los precios no son reales
+
+La página web es solo con fines educativos
