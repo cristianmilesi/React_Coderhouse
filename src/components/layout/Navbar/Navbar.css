@@ -48,3 +48,9 @@
 .enlaces:hover {
   color: rgb(228, 160, 209);
 }
+
+@media screen and (max-width: 780px) {
+  .enlaces {
+    font-size: small;
+  }
+}

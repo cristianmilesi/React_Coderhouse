@@ -1,6 +1,6 @@
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "./firebaseConfig";
-import { products } from "./asyncMock";
+import { products } from "./Mock";
 
 export const AgregarDocs = () => {
   const rellenar = () => {

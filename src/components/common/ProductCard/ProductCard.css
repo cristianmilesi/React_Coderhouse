@@ -4,13 +4,14 @@
 
 .card_container {
   transition: 0.2s ease-in-out;
-  margin: 5px auto;
-  padding: 3px;
+  margin: 10px auto;
+  padding: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 20vw;
-  height: 300px;
+  justify-content: space-around;
+  max-width: 300px;
+  width: 25vw;
+  height: 350px;
   gap: 5px;
   background-color: white;
   border: "1px solid gray";
@@ -39,6 +40,18 @@
 }
 
 .text_container {
-  font-size: 0.8rem;
-  margin: 5px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 780px) {
+  .card_container {
+    width: 25vw;
+    min-width: 150px;
+    height: 30vh;
+    font-size: 0.8rem;
+  }
+
+  .text_container {
+    font-size: 0.8rem;
+  }
 }

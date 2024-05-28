@@ -64,3 +64,27 @@
   align-items: center;
   text-align: center;
 }
+
+@media screen and (max-width: 780px) {
+  .cart_layout {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .cart_container {
+    width: 90vw;
+    min-height: 30vh;
+  }
+
+  .cart_card {
+    width: 90vw;
+  }
+
+  .cart_resumen {
+    width: 90vw;
+    margin: 20px;
+    padding: 20px;
+    border-left: none;
+    border-top: solid;
+    border-color: rgba(49, 40, 57, 0.634);
+  }
+}

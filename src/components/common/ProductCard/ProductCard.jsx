@@ -10,7 +10,6 @@ export const ProductCard = ({ id, title, img, description, price }) => {
         <img className="imagen_producto" src={img} alt="" />
       </div>
       <div className="text_container">
-        <p>{description} </p>
         <h4>
           {" "}
           $

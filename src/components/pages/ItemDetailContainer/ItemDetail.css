@@ -16,9 +16,11 @@
 .ImgProduct {
   margin: 5px auto;
   height: 60vh;
+  max-width: 90vw;
   object-fit: contain;
   border-radius: 5px;
   border: thistle;
+  background-color: white;
   box-shadow: 4px 4px 15px -4px rgba(0, 0, 0, 0.69);
   -webkit-box-shadow: 4px 4px 15px -4px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 4px 4px 15px -4px rgba(0, 0, 0, 0.69);

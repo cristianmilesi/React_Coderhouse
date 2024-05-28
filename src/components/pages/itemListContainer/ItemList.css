@@ -2,11 +2,16 @@
   box-sizing: border-box;
 }
 
+.FondoContainer {
+  min-height: 75vh;
+  padding-top: 10px;
+  background-color: rgba(234, 225, 231, 0.464);
+}
+
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
   gap: 5px;
-  background-color: rgba(234, 225, 231, 0.464);
 }

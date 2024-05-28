@@ -4,19 +4,21 @@ import "./ItemList.css";
 
 export const ItemList = ({ products }) => {
   return (
-    <div className="cardContainer">
-      {products.map(({ id, img, title, description, price }) => {
-        return (
-          <ProductCard
-            key={id}
-            img={img}
-            title={title}
-            description={description}
-            price={price}
-            id={id}
-          />
-        );
-      })}
+    <div className="FondoContainer">
+      <div className="cardContainer">
+        {products.map(({ id, img, title, description, price }) => {
+          return (
+            <ProductCard
+              key={id}
+              img={img}
+              title={title}
+              description={description}
+              price={price}
+              id={id}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

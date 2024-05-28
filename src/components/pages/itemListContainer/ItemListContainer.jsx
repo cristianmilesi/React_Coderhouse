@@ -35,7 +35,7 @@ export const ItemListContainer = () => {
 
   if (isLoading) {
     return (
-      <div>
+      <div className="Skeletons">
         <CardSkeleton />
         <CardSkeleton />
         <CardSkeleton />
